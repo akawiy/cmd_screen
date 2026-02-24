@@ -1,3 +1,0 @@
-pillow==9.5
-opencv-python
-pytube
