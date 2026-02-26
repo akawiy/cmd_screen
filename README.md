@@ -29,4 +29,4 @@ open the terminal that supports ANSI 24-bit Truecolor codes (almost all modern t
     - from camera with specifc index: `cmd_screen cam <camera index>` (index should be a non-negative integer)
     - from default camera: `cmd_screen cam` (the same as `cmd_screen cam 0`)
 
-**Not vibecoded but Made with ❤️ by Vladimir Polischuk**
+**Not vibecoded but made with ❤️ by Vladimir Polischuk**
