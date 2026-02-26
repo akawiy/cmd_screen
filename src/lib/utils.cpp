@@ -81,7 +81,7 @@ std::string ansi_truecolor(const cv::Vec3b& color_bgr, const bool is_bg) {
 
 double get_time_elapsed_s(const std::chrono::steady_clock::time_point& start) {
     const std::chrono::steady_clock::time_point now = std::chrono::steady_clock::now();
-    const std::chrono::microseconds difference = std::chrono::duration_cast<std::chrono::microseconds>(now - start);
-    const double elapsed_s = static_cast<double>(difference.count()) / 1000000.;
+    const std::chrono::microseconds diff = std::chrono::duration_cast<std::chrono::microseconds>(now - start);
+    const double elapsed_s = static_cast<double>(diff.count()) / 1000000.;
     return elapsed_s;
 }

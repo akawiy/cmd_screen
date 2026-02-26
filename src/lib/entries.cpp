@@ -48,7 +48,7 @@ void show_video(const std::string& video_path, const bool preload) {
             } while (elapsed_s * fps > frame_n);
 
             if (frame_n >= frames.size()) {
-                return;
+                break;
             }
 
             std::cout << "\x1b[H";  // Move cursor to top left
