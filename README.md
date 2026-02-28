@@ -23,12 +23,35 @@ directly in command prompt
 Once you have `cmd_screen.exe` (you can download it [here](https://github.com/akawiy/cmd_screen/releases/download/v2.0.1/cmd_screen.exe)), 
 open the terminal that supports ANSI 24-bit Truecolor codes (almost all modern terminals do) in the same directory and use one of the following commands:
 
-- **Print image:** `cmd_screen img <image path>`
-- **Play video:**
-    - right away: `cmd_screen vid <video path>` (Pros: no need to wait for playback to start, no risk of RAM overflow, adaptive sizing and centering / Cons: lower framerate, worse quality)
-    - after preloading: `cmd_screen vid <video path> preload` (Pros: higher framerate, better quality / Cons: high risk of RAM overflow for 1min+ videos, no adaptive sizing and centering)
-- **Show live camera picture:**
-    - from camera with specifc index: `cmd_screen cam <camera index>` (index should be a non-negative integer)
-    - from default camera: `cmd_screen cam` (the same as `cmd_screen cam 0`)
+### Print image:
+```bash
+cmd_screen img <image path>
+```
+
+### Play video right away:
+```bash
+cmd_screen vid <video path>
+```
+- _Pros: no need to wait for preloading to finish, no risk of RAM overflow, adaptive sizing and centering_
+- _Cons: lower framerate, worse quality_
+
+### Play video after preloading:
+```bash
+cmd_screen vid <video path> preload
+```
+- _Pros: higher framerate, better quality_
+- _Cons: high risk of RAM overflow for 1min+ videos, no adaptive sizing and centering_
+
+### Show live picture from specific camera:
+```bash
+cmd_screen cam <camera index>
+```
+_index should be a non-negative integer_
+
+### Show live picture from default camera:
+```bash
+cmd_screen cam
+```
+_the same as `cmd_screen cam 0`_
 
 **Not vibecoded and made with ❤️ by Vladimir Polischuk**
